@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@400;900&display=swap");
+
+body {
+  font: 1em/1.618 Nunito, sans-serif;
+  color: white;
+  background-color: #203b4e;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+#headshot {
+  width: 370px;
+  height: 500px;
+  align-items: center;
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 35px 68px 0 rgb(25, 77, 114), inset 0 -8px 16px 0 #ffff;
+}
+
+.nav {
+  background-color: #203b4e;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+ul {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  flex-direction: column;
+  justify-content: space-between;
+
+  max-width: 1000px;
+  min-height: 1000px;
+  padding: 50px;
+  border-radius: 50px;
+
+  background-color: #203b4e;
+  box-shadow: 34px 34px 68px 0px rgba(49, 90, 119, 1),
+    inset -8px -8px 16px 0px rgba(49, 90, 119, 1),
+    inset 0px 14px 28px 0px rgba(70, 128, 170, 1);
+}
+
+.nav {
+  background-color: #203b4e;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar
+.nav a {
+  float: none;
+  color: #ffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+Change the color of links on hover
+.nav a:hover {
+  background-color: #203b4e;
+  color: white;
+}
+
+Add a color to the active/current link
+.nav a.active {
+  background-color: #203b4e;
+  color: white;
+} */
+
+@media screen and (max-width: 428px) {
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  h2 {
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    min-height: 1000px;
+    padding: 50px;
+    border-radius: 50px;
+  }
+}
